@@ -194,15 +194,17 @@ int main()
                 break;
 
             case Quitting:
-                G_Manager.ShowQuitMessage(GameWindow);
-                player1.Init(sf::Vector2f(40, 260));
-                player2.Init(sf::Vector2f(750, 260));
-                ball.Init(DEFAULT_POSITION);
-                player1Score = 0;
-                player2Score = 0;
-                Score.setString("0   0");
-                ballMoving = false;
-                ballStopped = true;
+                {
+                    G_Manager.ShowQuitMessage(GameWindow);
+                    player1.Init(sf::Vector2f(40, 260));
+                    player2.Init(sf::Vector2f(750, 260));
+                    ball.Init(DEFAULT_POSITION);
+                    player1Score = 0;
+                    player2Score = 0;
+                    Score.setString("0   0");
+                    ballMoving = false;
+                    ballStopped = true;
+                }
                 break;
 
             case ShowingPlayMenu:
@@ -304,9 +306,31 @@ int main()
                         Score.setPosition(sf::Vector2f(WINDOW_WIDTH / 2 - 68, 20));
 
                     if(player1Score > 10 && (player1Score - player2Score >= 2))
+                    {
                         G_Manager.setGameState(PlayerOneWonVsComp);
+                        G_Manager.ShowQuitMessage(GameWindow);
+                        player1.Init(sf::Vector2f(40, 260));
+                        player2.Init(sf::Vector2f(750, 260));
+                        ball.Init(DEFAULT_POSITION);
+                        player1Score = 0;
+                        player2Score = 0;
+                        Score.setString("0   0");
+                        ballMoving = false;
+                        ballStopped = true;
+                    }
                     else if(player2Score > 10 && ((player2Score - player1Score) >= 2))
+                    {
                         G_Manager.setGameState(CompWonVsHuman);
+                        G_Manager.ShowQuitMessage(GameWindow);
+                        player1.Init(sf::Vector2f(40, 260));
+                        player2.Init(sf::Vector2f(750, 260));
+                        ball.Init(DEFAULT_POSITION);
+                        player1Score = 0;
+                        player2Score = 0;
+                        Score.setString("0   0");
+                        ballMoving = false;
+                        ballStopped = true;
+                    }
 
                     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
                         G_Manager.setGameState(Quitting);
@@ -414,9 +438,31 @@ int main()
                         Score.setPosition(sf::Vector2f(WINDOW_WIDTH / 2 - 68, 20));
 
                     if(player1Score > 10 && (player1Score - player2Score >= 2))
+                    {
                         G_Manager.setGameState(PlayerOneWonVsComp);
+                        G_Manager.ShowQuitMessage(GameWindow);
+                        player1.Init(sf::Vector2f(40, 260));
+                        player2.Init(sf::Vector2f(750, 260));
+                        ball.Init(DEFAULT_POSITION);
+                        player1Score = 0;
+                        player2Score = 0;
+                        Score.setString("0   0");
+                        ballMoving = false;
+                        ballStopped = true;
+                    }
                     else if(player2Score > 10 && ((player2Score - player1Score) >= 2))
+                    {
                         G_Manager.setGameState(CompWonVsHuman);
+                        G_Manager.ShowQuitMessage(GameWindow);
+                        player1.Init(sf::Vector2f(40, 260));
+                        player2.Init(sf::Vector2f(750, 260));
+                        ball.Init(DEFAULT_POSITION);
+                        player1Score = 0;
+                        player2Score = 0;
+                        Score.setString("0   0");
+                        ballMoving = false;
+                        ballStopped = true;
+                    }
 
                     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
                         G_Manager.setGameState(Quitting);
@@ -525,9 +571,31 @@ int main()
                         Score.setPosition(sf::Vector2f(WINDOW_WIDTH / 2 - 68, 20));
 
                     if(player1Score > 10 && (player1Score - player2Score >= 2))
+                    {
                         G_Manager.setGameState(PlayerOneWonVsComp);
+                        G_Manager.ShowQuitMessage(GameWindow);
+                        player1.Init(sf::Vector2f(40, 260));
+                        player2.Init(sf::Vector2f(750, 260));
+                        ball.Init(DEFAULT_POSITION);
+                        player1Score = 0;
+                        player2Score = 0;
+                        Score.setString("0   0");
+                        ballMoving = false;
+                        ballStopped = true;
+                    }
                     else if(player2Score > 10 && ((player2Score - player1Score) >= 2))
+                    {
                         G_Manager.setGameState(CompWonVsHuman);
+                        G_Manager.ShowQuitMessage(GameWindow);
+                        player1.Init(sf::Vector2f(40, 260));
+                        player2.Init(sf::Vector2f(750, 260));
+                        ball.Init(DEFAULT_POSITION);
+                        player1Score = 0;
+                        player2Score = 0;
+                        Score.setString("0   0");
+                        ballMoving = false;
+                        ballStopped = true;
+                    }
 
                     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
                         G_Manager.setGameState(Quitting);
@@ -636,9 +704,31 @@ int main()
                         Score.setPosition(sf::Vector2f(WINDOW_WIDTH / 2 - 68, 20));
 
                     if(player1Score > 10 && (player1Score - player2Score >= 2))
+                    {
                         G_Manager.setGameState(PlayerOneWonVsHuman);
+                        G_Manager.ShowQuitMessage(GameWindow);
+                        player1.Init(sf::Vector2f(40, 260));
+                        player2.Init(sf::Vector2f(750, 260));
+                        ball.Init(DEFAULT_POSITION);
+                        player1Score = 0;
+                        player2Score = 0;
+                        Score.setString("0   0");
+                        ballMoving = false;
+                        ballStopped = true;
+                    }
                     else if(player2Score > 10 && ((player2Score - player1Score) >= 2))
+                    {
                         G_Manager.setGameState(PlayerTwoWonVsHuman);
+                        G_Manager.ShowQuitMessage(GameWindow);
+                        player1.Init(sf::Vector2f(40, 260));
+                        player2.Init(sf::Vector2f(750, 260));
+                        ball.Init(DEFAULT_POSITION);
+                        player1Score = 0;
+                        player2Score = 0;
+                        Score.setString("0   0");
+                        ballMoving = false;
+                        ballStopped = true;
+                    }
 
                     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
                         G_Manager.setGameState(Quitting);
