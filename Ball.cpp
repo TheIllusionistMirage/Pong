@@ -48,9 +48,11 @@ void Ball::stopMoving()
 {
     currentSpeed = sf::Vector2<float>(0.0f, 0.0f);
 }
-void Ball::resetSpeed()
+void Ball::resetSpeed(int sign)
 {
     currentSpeed = BallSpeed;
+    BallSpeed.y = BallSpeed.y * sign;
+    BallSpeed.x = BallSpeed.x * sign;
 }
 
 void Ball::playHitSound()
