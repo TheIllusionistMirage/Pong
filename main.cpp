@@ -4,32 +4,32 @@
 
 
 /*******************************************************************************************************************
- *                                                                                                                 * 
+ *                                                                                                                 *
  *  The zlib/libpng License (Zlib) [Open Source Initiative Approved License]                                       *
  *  Copyright (c) 2013, Koushtav Chakrabarty(The illusionist mirage)                                               *
- *                                                                                                                 * 
+ *                                                                                                                 *
  *                                                                                                                 *
  *  Before using this source code, you must read and agree to the following conditions:                            *           *
  *                                                                                                                 *
- *                                                                                                                 * 
+ *                                                                                                                 *
  *  This software is provided 'as-is', without any express or implied warranty. In no                              *
  *  event will I, the author, be held liable for any damages arising from the use of this software.                *
- *                                                                                                                 * 
+ *                                                                                                                 *
  *  Permission is granted to anyone to use this software for any purpose, including                                *
  *  commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:    *
- *                                                                                                                 * 
+ *                                                                                                                 *
  *     0. This program uses SFML v 2.1, which itself was licensed under zlib(https://github.com/LaurentGomila/     *
  *        SFML/blob/master/license.txt).                                                                           *
- *                                                                                                                 *  
+ *                                                                                                                 *
  *     1. The origin of this software must not be misrepresented; you must not claim that you wrote                *
  *        the original software. If you use this software in a product, an acknowledgment in the                   *
  *        product documentation would be appreciated but is not required.                                          *
- *                                                                                                                 * 
+ *                                                                                                                 *
  *     2. Altered source versions must be plainly marked as such, and must not be misrepresented as                *
  *        being the original software.                                                                             *
- *                                                                                                                 * 
+ *                                                                                                                 *
  *     3. This notice may not be removed or altered from any source distribution.                                  *
- *                                                                                                                 * 
+ *                                                                                                                 *
  *******************************************************************************************************************/
 
 
@@ -85,8 +85,8 @@ sf::Color PLAYER_2_COLOR = sf::Color::Blue;
 /** Ball related constants **/
 const float BALL_RADIUS = 5.0f;
 sf::Color BALL_COLOR = sf::Color::White;
-const char *BUFFER_NAME = "Music/paddleHit.wav";
-sf::Vector2f DEFAULT_POSITION = sf::Vector2f(WINDOW_WIDTH / 2 - 5, WINDOW_HEIGHT / 2 - 5);
+const char *BUFFER_NAME = "Audio/paddleHit.wav";
+sf::Vector2f DEFAULT_POSITION = sf::Vector2f(WINDOW_WIDTH / 2 - 7.5, WINDOW_HEIGHT / 2 - 5);
 
 
 /** Game manager class related constants **/
@@ -151,6 +151,8 @@ int main()
     bool ballMoving = false;
     bool ballStopped = true;
 
+    int ballRandomDirection = 1;
+
     sf::Font textFont;
     textFont.loadFromFile("Fonts/BankGothic.ttf");
 
@@ -160,7 +162,7 @@ int main()
 
     int player1Score = 0, player2Score = 0;
 
-    const char *SCORE_UPDATE_BUFFER = "Fonts/scoreUpdate.wav";
+    const char *SCORE_UPDATE_BUFFER = "Audio/scoreUpdate.wav";
     sf::SoundBuffer UPDATE_BUFFER;
     UPDATE_BUFFER.loadFromFile(SCORE_UPDATE_BUFFER);
     sf::Sound UPDATE_SOUND;
@@ -198,6 +200,7 @@ int main()
                 ball.Init(DEFAULT_POSITION);
                 player1Score = 0;
                 player2Score = 0;
+                Score.setString("0   0");
                 ballMoving = false;
                 ballStopped = true;
                 break;
@@ -278,7 +281,7 @@ int main()
                         player1.Init(sf::Vector2f(player1.getPaddlePosition().x, WINDOW_HEIGHT / 2 - 5));
                         ballMoving = false;
                         ballStopped = true;
-                        ball.resetSpeed();
+                        ball.resetSpeed(ballRandomDirection * (-1));
                     }
 
                     if(ball.isColliding(rightRect))
@@ -292,8 +295,13 @@ int main()
                         player1.Init(sf::Vector2f(player1.getPaddlePosition().x, WINDOW_HEIGHT / 2 - 5));
                         ballMoving = false;
                         ballStopped = true;
-                        ball.resetSpeed();
+                        ball.resetSpeed(ballRandomDirection * (-1));
                     }
+
+                    if(player1Score >= 10)
+                        Score.setPosition(sf::Vector2f(WINDOW_WIDTH / 2 - 100, 20));
+                    else if(player2Score < 10)
+                        Score.setPosition(sf::Vector2f(WINDOW_WIDTH / 2 - 68, 20));
 
                     if(player1Score > 10 && (player1Score - player2Score >= 2))
                         G_Manager.setGameState(PlayerOneWonVsComp);
@@ -383,7 +391,7 @@ int main()
                         player1.Init(sf::Vector2f(player1.getPaddlePosition().x, WINDOW_HEIGHT / 2 - 5));
                         ballMoving = false;
                         ballStopped = true;
-                        ball.resetSpeed();
+                        ball.resetSpeed(ballRandomDirection * (-1));
                     }
 
                     if(ball.isColliding(rightRect))
@@ -397,8 +405,13 @@ int main()
                         player1.Init(sf::Vector2f(player1.getPaddlePosition().x, WINDOW_HEIGHT / 2 - 5));
                         ballMoving = false;
                         ballStopped = true;
-                        ball.resetSpeed();
+                        ball.resetSpeed(ballRandomDirection * (-1));
                     }
+
+                    if(player1Score >= 10)
+                        Score.setPosition(sf::Vector2f(WINDOW_WIDTH / 2 - 100, 20));
+                    else if(player2Score < 10)
+                        Score.setPosition(sf::Vector2f(WINDOW_WIDTH / 2 - 68, 20));
 
                     if(player1Score > 10 && (player1Score - player2Score >= 2))
                         G_Manager.setGameState(PlayerOneWonVsComp);
@@ -489,7 +502,7 @@ int main()
                         player1.Init(sf::Vector2f(player1.getPaddlePosition().x, WINDOW_HEIGHT / 2 - 5));
                         ballMoving = false;
                         ballStopped = true;
-                        ball.resetSpeed();
+                        ball.resetSpeed(ballRandomDirection * (-1));
                     }
 
                     if(ball.isColliding(rightRect))
@@ -503,8 +516,13 @@ int main()
                         player1.Init(sf::Vector2f(player1.getPaddlePosition().x, WINDOW_HEIGHT / 2 - 5));
                         ballMoving = false;
                         ballStopped = true;
-                        ball.resetSpeed();
+                        ball.resetSpeed(ballRandomDirection * (-1));
                     }
+
+                    if(player1Score >= 10)
+                        Score.setPosition(sf::Vector2f(WINDOW_WIDTH / 2 - 100, 20));
+                    else if(player2Score < 10)
+                        Score.setPosition(sf::Vector2f(WINDOW_WIDTH / 2 - 68, 20));
 
                     if(player1Score > 10 && (player1Score - player2Score >= 2))
                         G_Manager.setGameState(PlayerOneWonVsComp);
@@ -566,12 +584,14 @@ int main()
 
                     if(ball.isColliding(player1.getRect()))
                     {
+                        ball.playHitSound();
                         ball.deflectX();
                         ball.accelerate(player1);
                     }
 
                     if(ball.isColliding((player2.getRect())))
                     {
+                        ball.playHitSound();
                         ball.deflectX();
                         ball.accelerate(player2);
                     }
@@ -593,7 +613,7 @@ int main()
                         player1.Init(sf::Vector2f(player1.getPaddlePosition().x, WINDOW_HEIGHT / 2 - 5));
                         ballMoving = false;
                         ballStopped = true;
-                        ball.resetSpeed();
+                        ball.resetSpeed(ballRandomDirection * (-1));
                     }
 
                     if(ball.isColliding(rightRect))
@@ -607,8 +627,13 @@ int main()
                         player1.Init(sf::Vector2f(player1.getPaddlePosition().x, WINDOW_HEIGHT / 2 - 5));
                         ballMoving = false;
                         ballStopped = true;
-                        ball.resetSpeed();
+                        ball.resetSpeed(ballRandomDirection * (-1));
                     }
+
+                    if(player1Score >= 10)
+                        Score.setPosition(sf::Vector2f(WINDOW_WIDTH / 2 - 100, 20));
+                    else if(player2Score < 10)
+                        Score.setPosition(sf::Vector2f(WINDOW_WIDTH / 2 - 68, 20));
 
                     if(player1Score > 10 && (player1Score - player2Score >= 2))
                         G_Manager.setGameState(PlayerOneWonVsHuman);
