@@ -48,7 +48,7 @@ class Ball
         void stopMoving();
 
         // reset the speed of ball
-        void resetSpeed();
+        void resetSpeed(int sign);
 
         // detect collision
         bool isColliding(sf::RectangleShape RECTANGLE);
