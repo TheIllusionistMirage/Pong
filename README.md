@@ -2,9 +2,6 @@
    Pong
 ==========
 
-========================
- The illusionist mirage
-========================
 
 This is my version of the original Pong created by Allan Alcorn.
 
@@ -13,3 +10,9 @@ The is program was written by me using SFML 2.1 in Code::Blocks 12.11 IDE and co
 I also strongly feel that the source will be VERY VERY useful for first timers who are into game programming since I've tried to make it object oriented and efficient as much as possible(since I am also an intermediate developer only). So, no one would be more happy than me if someone finds this code useful for learning.
 
 Hope you like it. :)
+
+
+CHEERS! :D
+
+Koushtav Chakrabarty
+(The illusionist mirage)
