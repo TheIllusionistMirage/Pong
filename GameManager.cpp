@@ -265,7 +265,7 @@ void GameManager::ShowPlayVsHumanControls(sf::RenderWindow &GAME_WINDOW)
     player2_controls.setColor(sf::Color::Yellow);
     player2_controls.setPosition(sf::Vector2f(450, 150));
 
-    sf::Text continueText("Press any key to continue...", textFont, 30);
+    sf::Text continueText("Press ENTER key to continue...", textFont, 30);
     continueText.setColor(sf::Color::Red);
     continueText.setPosition(sf::Vector2f(150, 500));
 
@@ -278,13 +278,11 @@ void GameManager::ShowPlayVsHumanControls(sf::RenderWindow &GAME_WINDOW)
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
     {
-        previousState = currentState;
         currentState = Quitting;
     }
 
     else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Return))
     {
-        previousState = currentState;
         currentState = PlayingVsHuman;
     }
 }
