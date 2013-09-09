@@ -9,7 +9,9 @@ The is program was written by me using SFML 2.1 in Code::Blocks 12.11 IDE and co
 
 I also strongly feel that the source will be VERY VERY useful for first timers who are into game programming since I've tried to make it object oriented and efficient as much as possible(since I am also an intermediate developer only) and have documented it too. So, no one would be more happy than me if someone finds this code useful for learning.
 
-Hope you like it. :)
+The program is licensed under zlib/libpng License. So, feel free to do whatever you want with it.
+
+And Hope you like it. :)
 
 
 CHEERS! :D
