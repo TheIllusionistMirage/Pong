@@ -25,7 +25,7 @@ This software is provided 'as-is', without any express or implied warranty. In n
 
 Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
 
-0. First of all, this program usese SFML v 2.1, which itself is licensed uder zlib/libpng. Without SFML, I counldn't have
+0. First of all, this program usese SFML v 2.1, which itself is licensed uder zlib/libpng. Without SFML, I couldn't have made this program in the first place.
 
 1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
 
