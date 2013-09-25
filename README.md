@@ -11,13 +11,20 @@ I also strongly feel that the source will be VERY VERY useful for first timers w
 
 The program is licensed under zlib/libpng License. So, feel free to do whatever you want with it.
 
+Hope you like it. :)
+
+
+CHEERS! :D
+
+Koushtav Chakrabarty
+(The illusionist mirage)
+
 =============
    License
 =============
 
 [OSI Approved License]
 
-The zlib/libpng License
 
 Copyright (c) 2013 Koushtav Chakrabarty(The illusionist mirage)
 
@@ -33,11 +40,3 @@ Permission is granted to anyone to use this software for any purpose, including 
 
 3. This notice may not be removed or altered from any source distribution.
 
-
-And Hope you like it. :)
-
-
-CHEERS! :D
-
-Koushtav Chakrabarty
-(The illusionist mirage)
