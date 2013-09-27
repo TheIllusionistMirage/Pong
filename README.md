@@ -9,7 +9,7 @@ This program was written by me using C++/SFML 2.1 in Code::Blocks 12.11 IDE and 
 
 I also strongly feel that the source will be VERY VERY useful for first timers who are into game programming since I've tried to make it object oriented and efficient as much as possible(since I am also an intermediate developer only) and have documented it too. So, no one would be more happy than me if someone finds this code useful for learning.
 
-The program is licensed under zlib/libpng License. So, feel free to do whatever you want with it.
+The program is licensed under zlib/libpng License. So, feel free to do whatever you want with it. And if you find it helpful or use this code anywhere, I'd be very grateful to you if you could e-mail me at : lostsoulofthegeek[at-the-rate]gmail[dot]com acknowledging the same.
 
 Hope you like it. :)
 
