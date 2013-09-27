@@ -33,9 +33,9 @@ class GameManager
 
         // select difficulty
         sf::Sprite difficulty;
-        Button difficultyEasy;              // diffisulty easy button
-        Button difficultyIntermediate;      // diffisulty medium button
-        Button difficultyHard;              // diffisulty hard button
+        Button difficultyEasy;              // difficulty easy button
+        Button difficultyIntermediate;      // difficulty medium button
+        Button difficultyHard;              // difficulty hard button
 
         Button backButton;                  // back button
 
