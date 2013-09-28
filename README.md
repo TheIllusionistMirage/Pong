@@ -3,7 +3,7 @@
 ==================
 
 1. C++0x
-2. SFML 2.1 or greater(http:/sfml-dev.org)
+2. SFML 2.1 or greater(http://sfml-dev.org)
 
 ================
    About Pong
