@@ -1,6 +1,13 @@
-==========
-   Pong
-==========
+==================
+   Requirements
+==================
+
+1. C++0x
+2. SFML 2.1 or greater
+
+================
+   About Pong
+================
 
 
 This is my version of the original Pong created by Allan Alcorn(http://en.wikipedia.org/wiki/Pong).
