@@ -1,5 +1,5 @@
 /**********************************************************************
-*  Copyright (c) 2013 Koushtav Chakrabarty(The Illusionist Mirage)    *
+*  Copyright (c) 2013, Koushtav Chakrabarty(The Illusionist Mirage)   *
 *  License: zlib/libpng License                                       *
 *  zlib/libpng License web page: http://opensource.org/licenses/Zlib  *
 **********************************************************************/
