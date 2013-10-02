@@ -19,10 +19,8 @@ I also strongly feel that the source will be VERY VERY useful for first timers w
 The program is licensed under zlib/libpng License. So, feel free to do whatever you want with it.
 
 /**********************************************************************************************************
-*													                                                                   *
-*	      AND IF YOU FIND IT HELPFUL OR USE THIS CODE ANYWHERE, I'D BE VERY GRATEFUL TO YOU IF YOU	       *
-*	      WOULD E-MAIL ME AT : lostsoulofthegeek[at-the-rate]gmail[dot]com ACKNOWLEDGING THE SAME.         *
-*													                                                                   *
+	      AND IF YOU FIND IT HELPFUL OR USE THIS CODE ANYWHERE, I'D BE VERY GRATEFUL TO YOU IF YOU	       
+	      WOULD E-MAIL ME AT : lostsoulofthegeek[at-the-rate]gmail[dot]com ACKNOWLEDGING THE SAME.   
 **********************************************************************************************************/
 
 Hope you like it. :)
