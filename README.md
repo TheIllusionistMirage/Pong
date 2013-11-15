@@ -10,7 +10,7 @@
    Download
 ==================
 
-http://www.mediafire.com/download/gf0n47f1yt1f0li/Pong.rar(Windows only)
+http://www.mediafire.com/download/gf0n47f1yt1f0li/Pong.rar (Windows only)
 
 ================
    About Pong
