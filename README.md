@@ -6,12 +6,6 @@
 2. SFML 2.1 or greater(http://sfml-dev.org)
 
 
-==================
-   Download
-==================
-
-http://www.mediafire.com/download/gf0n47f1yt1f0li/Pong.rar (Windows only)
-
 ================
    About Pong
 ================
@@ -38,6 +32,14 @@ CHEERS! :D
 
 Koushtav Chakrabarty
 (The illusionist mirage)
+
+
+==================
+   Download
+==================
+
+http://www.mediafire.com/download/gf0n47f1yt1f0li/Pong.rar (Windows only)
+
 
 =============
    License
