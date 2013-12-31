@@ -20,11 +20,6 @@ I also strongly feel that the source will be VERY VERY useful for first timers w
 The program is licensed under zlib/libpng License. So, feel free to do whatever you want with it.
 
 
-
-	AND IF YOU FIND IT HELPFUL OR USE THIS CODE ANYWHERE, I'D BE VERY GRATEFUL TO YOU IF YOU	       
-	WOULD E-MAIL ME AT : lostsoulofthegeek[at-the-rate]gmail[dot]com ACKNOWLEDGING THE SAME.   
-
-
 Hope you like it. :)
 
 
@@ -38,27 +33,12 @@ Koushtav Chakrabarty
    Download
 ==================
 
-http://www.mediafire.com/download/gf0n47f1yt1f0li/Pong.rar (Windows only)
+You can download the game from http://fleptic.eu/Pong/
 
+==================
+     Contact
+==================
 
-=============
-   License
-=============
-
-[OSI Approved License]
-
-
-Copyright (c) 2013 Koushtav Chakrabarty(The illusionist mirage)
-
-This software is provided 'as-is', without any express or implied warranty. In no event will I be held liable for any damages arising from the use of this software.
-
-Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
-
-0. First of all, this program uses SFML v 2.1, which itself is licensed under zlib/libpng. Without SFML, I couldn't have made this program in the first place.
-
-1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
-
-2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
-
-3. This notice may not be removed or altered from any source distribution.
-
+Name  : Koushtav Chakrabarty
+Email : koushtav@fleptic.eu
+Location : India
