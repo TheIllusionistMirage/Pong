@@ -35,10 +35,13 @@ Koushtav Chakrabarty
 
 You can download the game from http://fleptic.eu/Pong/
 
+
 ==================
-     Contact
+   Contact
 ==================
 
 Name  : Koushtav Chakrabarty
+
 Email : koushtav@fleptic.eu
+
 Location : India
