@@ -33,7 +33,7 @@ Koushtav Chakrabarty
    Download
 ==================
 
-You can download the game from http://fleptic.eu/Pong/
+You can download the game from http://fleptic.eu/my-projects-pong.html
 
 
 ==================
