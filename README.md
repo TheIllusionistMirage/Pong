@@ -18,8 +18,6 @@ This program was written by me using C++/SFML 2.1 in Code::Blocks 12.11 IDE and 
 **NOTE**:-
 I would like to CLEARLY state that this game is not written in the most efficient way to use CPU and resources since this was the very first 'program' I wrote. **The game also doesn't implement a [fixed timestep][1]!**
 
-I also strongly feel that the source will be VERY VERY useful for first timers who are into game programming since I've tried to make it object oriented and efficient as much as possible and have documented it too. So, no one would be more happy than me if someone finds this code useful for learning.
-
 Feel free to do whatever you want with the code.
 
 
