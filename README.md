@@ -13,7 +13,7 @@
 
 This is my version of the famous Pong created by Allan Alcorn (http://en.wikipedia.org/wiki/Pong).
 
-This program was written by me using C++/SFML 2.1 in Code::Blocks 12.11 IDE and compiled using the MinGW 4.7.2 compiler, on Windows 7. This game contains a wonderful menu and gameplay options include playing with computer and human at varying difficulty levels.
+This program was written in C++ using SFML 2.1. This game contains a wonderful menu and gameplay options include playing with computer and human at varying difficulty levels.
 
 **NOTE**:-
 I would like to CLEARLY state that this game is not written in the most efficient way to use CPU and resources since this was the very first 'program' I wrote. **The game also doesn't implement a [fixed timestep][1]!**
