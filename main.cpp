@@ -80,7 +80,7 @@ int main()
 
     GameWindow.setMouseCursorVisible(false);
 
-    Mouse MousePointer("Images/MousePointer.png", 9, 4, 26, 37);
+    Mouse MousePointer("Images/mousePointer.png", 9, 4, 26, 37);
 
     /** Obstacles **/
     sf::RectangleShape topRect;
