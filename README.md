@@ -20,11 +20,4 @@ I would like to CLEARLY state that this game is not written in the most efficien
 
 Feel free to do whatever you want with the code.
 
-
-==================
-   Download
-==================
-
-You can download the game (sorry Windows only) from http://fleptic.eu/pong.html
-
 [1]: http://gafferongames.com/game-physics/fix-your-timestep/ "fixed timestep"
